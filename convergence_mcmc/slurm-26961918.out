@@ -1,0 +1,32 @@
+ED_12ded2.py:127: RuntimeWarning: divide by zero encountered in log
+  alpha = min(1,np.exp(np.log(pr(x_tuta)*li(x_tuta)) - np.log(pr(x_current)*li(x_current))))
+ED_12ded2.py:127: RuntimeWarning: invalid value encountered in double_scalars
+  alpha = min(1,np.exp(np.log(pr(x_tuta)*li(x_tuta)) - np.log(pr(x_current)*li(x_current))))
+/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/scipy/integrate/odepack.py:236: ODEintWarning: Excess work done on this call (perhaps wrong Dfun type). Run with full_output = 1 to get quantitative information.
+  warnings.warn(warning_msg, ODEintWarning)
+/fslhome/fslcollab151/convergence_mcmc/Results/12ded2
+/fslhome/fslcollab151/convergence_mcmc/Results/12d
+/fslhome/fslcollab151/convergence_mcmc/Results/12d
+/fslhome/fslcollab151/convergence_mcmc/Results/12d
+10000
+Accept ratio: 0.8427157284271573
+Traceback (most recent call last):
+  File "ED_12ded2.py", line 139, in <module>
+    fig1.savefig(os.path.join(my_path, myfile_x)) 
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/matplotlib/figure.py", line 2035, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/matplotlib/backend_bases.py", line 2263, in print_figure
+    **kwargs)
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/matplotlib/backends/backend_agg.py", line 526, in print_png
+    with cbook.open_file_cm(filename_or_obj, "wb") as fh:
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/matplotlib/cbook/__init__.py", line 624, in open_file_cm
+    fh, opened = to_filehandle(path_or_file, mode, True, encoding)
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/matplotlib/cbook/__init__.py", line 609, in to_filehandle
+    fh = io.open(fname, flag, encoding=encoding)
+FileNotFoundError: [Errno 2] No such file or directory: '/fslhome/fslcollab151/convergence_mcmc/Results/12d/x0.png'
+
+real	7m33.822s
+user	7m32.322s
+sys	0m0.459s

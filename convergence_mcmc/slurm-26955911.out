@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "ED_refed2.py", line 11, in <module>
+    prit(my_path)
+NameError: name 'prit' is not defined
+
+real	0m1.051s
+user	0m0.785s
+sys	0m0.125s

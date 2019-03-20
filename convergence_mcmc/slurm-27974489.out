@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "ED_123dnged1.py", line 11, in <module>
+    prit(my_path)
+NameError: name 'prit' is not defined
+
+real	0m2.057s
+user	0m1.014s
+sys	0m0.251s

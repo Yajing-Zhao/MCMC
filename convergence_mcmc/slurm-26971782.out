@@ -1,0 +1,41 @@
+ED_refed2.py:116: RuntimeWarning: divide by zero encountered in log
+  alpha = min(1,np.exp(np.log(pr(x_tuta)*li(x_tuta)) - np.log(pr(x_current)*li(x_current))))
+ED_refed2.py:116: RuntimeWarning: invalid value encountered in double_scalars
+  alpha = min(1,np.exp(np.log(pr(x_tuta)*li(x_tuta)) - np.log(pr(x_current)*li(x_current))))
+/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/scipy/integrate/odepack.py:236: ODEintWarning: Excess work done on this call (perhaps wrong Dfun type). Run with full_output = 1 to get quantitative information.
+  warnings.warn(warning_msg, ODEintWarning)
+/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/statsmodels/regression/linear_model.py:1283: RuntimeWarning: invalid value encountered in sqrt
+  return rho, np.sqrt(sigmasq)
+/fslhome/fslcollab151/convergence_mcmc/Results/refed2
+100
+Accept ratio: 1.0
+Accept ratio: 0.7623762376237624
+Accept ratio: 0.8118811881188119
+Accept ratio: 0.8118811881188119
+Accept ratio: 0.8712871287128713
+Accept ratio: 0.8118811881188119
+Accept ratio: 0.8514851485148515
+Accept ratio: 0.7524752475247525
+Accept ratio: 0.7821782178217822
+Accept ratio: 1.0
+Gelman-Rubin: 7.269088214672808
+the geweke result of chain 1 is: [(0, 3.47726249252926), (2, 3.499661486460572), (5, 3.0507895288762423), (7, 1.943889335297225), (10, 1.7224186297661235), (13, 0.9689552545981689), (15, 1.167409856152363), (18, -0.4237180827557623), (21, -1.7099920562728967), (23, -3.8718468852929577), (26, -6.75945959079455), (28, -7.887647923739715), (31, -11.615884578309645), (34, -12.349469308352175), (36, -11.250945077099725), (39, -23.014421123759988), (42, -29.856121310499017), (44, -21.172204878442066), (47, -5.487958822536109), (50, -1.4612546206003814)]
+the geweke result of chain 2 is: [(0, -1.563172551812698), (2, -1.6117705745708057), (5, -2.108593368526943), (7, -2.0495880262835433), (10, -2.1066865206420338), (13, -2.0876582029723263), (15, -2.160316733478831), (18, -2.0472810206870786), (21, -1.2253304395790134), (23, -0.8194743931006573), (26, -0.12460804578592634), (28, 0.2003730916690683), (31, 0.4414015347552828), (34, 0.5482615223990729), (36, 0.644583304309868), (39, 0.8274822086126984), (42, 1.133341506239585), (44, 1.5051177651033072), (47, nan), (50, 1.475371056572963)]
+Traceback (most recent call last):
+  File "ED_refed2.py", line 161, in <module>
+    diagno1.geweke()
+  File "ED_refed2.py", line 46, in geweke
+    z /= np.sqrt(spec(first_slice)/len(first_slice) +
+  File "ED_refed2.py", line 28, in spec
+    beta, sigma = yule_walker(x, order)
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/statsmodels/regression/linear_model.py", line 1278, in yule_walker
+    rho = np.linalg.solve(R, r[1:])
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/numpy/linalg/linalg.py", line 394, in solve
+    r = gufunc(a, b, signature=signature, extobj=extobj)
+  File "/fslhome/fslcollab151/anaconda3/lib/python3.6/site-packages/numpy/linalg/linalg.py", line 89, in _raise_linalgerror_singular
+    raise LinAlgError("Singular matrix")
+numpy.linalg.linalg.LinAlgError: Singular matrix
+
+real	1m0.387s
+user	0m59.730s
+sys	0m0.239s
